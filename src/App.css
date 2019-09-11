@@ -2,12 +2,37 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #070D3D
 }
 
+.sigIn {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  monospace;
+  color: aliceblue
+}
+
+.pictureUser{
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #ffd35b;
+  width: 50px;
+}
+.logo{
+  width: 200px; 
+  height: 200px;
+}
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheeto');
+
+.title {
+  font-family: 'Righteous', cursive;
+  font-size : 400% ;
+  text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, 2px 2px 2px rgba(248,255,249,0);
+  color: #F0F6F3
+}
+
+/*
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -19,8 +44,8 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  margin-top: 5%;
 }
 
 @keyframes App-logo-spin {
@@ -31,3 +56,5 @@
     transform: rotate(360deg);
   }
 }
+
+*/
