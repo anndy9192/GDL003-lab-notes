@@ -15,21 +15,89 @@ body {
 .pictureUser{
   margin: 0 auto;
   text-align: center;
-  border-radius: 50%;
-  border: 2px solid #ffd35b;
-  width: 50px;
+  border-radius: 80%;
+  border: 2px solid #0c5a79;
+  width: 80px;
 }
 .logo{
   width: 200px; 
   height: 200px;
+  text-align: center;
 }
-@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheeto');
+
 
 .title {
   font-family: 'Righteous', cursive;
-  font-size : 400% ;
+  font-size : 12000% ;
   text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, 2px 2px 2px rgba(248,255,249,0);
   color: #F0F6F3
+}
+
+.saludo {
+  font-size: 245%;
+  color: white;
+  font-family: "URW Chancery L",
+}
+
+.tit {
+  font-size: 145%;
+  color: white;
+  font-family: "URW Chancery L",
+}
+
+.cardTitle {
+  color: rgb(7, 7, 7);
+  text-align: center;
+}
+
+.container .titleList {
+  color: #fff;
+  text-align: center;
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+* {
+	box-sizing: border-box;
+}
+
+.card_main .wrapper {
+  
+  height: 280px;
+  width: 200px;
+  border-radius: 10px;
+  /*margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  font-family: "Comic Sans MS"
+}
+
+.card_main_container {
+  
+  text-align: left;
+	height: 100%;
+  display: inline-block;
+
+}
+
+.card_main {
+  
+  text-align: left;
+	display: block;
+	padding: 0 1.7rem;
+	
+}
+
+.card_main .wrapper {
+	background-color: #d5d816;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+	position: relative;
+	overflow: hidden;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+  font-family: "Comic Sans MS"  
 }
 
 /*
