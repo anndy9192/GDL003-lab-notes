@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import firebase from './firebasekey'
 
-
 function useTimes() {
     const [notes, setNotes] = useState([])
+    
 
     useEffect(() => {
-        const unsubscribe = firebase
-            .firestore()
+        const username = firebase.getCurrentUsername()
+        
+        const unsubscribe = firebase.getDB()
             .collection('notes')
             .onSnapshot((snapshot) => {
                 const newNotes = snapshot.docs.map((doc) => ({
@@ -17,24 +18,31 @@ function useTimes() {
                 setNotes(newNotes)
             })
         return () => unsubscribe()
+        /*let notesArray = Promise.resolve(firebase.getNotes()).then(function (value) {
+            setNotes(value)
+        })
+        console.log("notesArray", notesArray)*/
     }, [])
 
     return notes
 }
 const NotesList = () => {
-
+    
     const notes = useTimes()
-    return (
-        <div class="container">
-            <h2 class="titleList"> Notes list</h2>
-            {notes.map((note) =>
-                <div class="card_main_container" key={note.id}>
-                    <div class="card_main">
-                        <div class="wrapper">
 
-                            <div class="content">
-                                <h4 class="cardTitle"><b>{note.note}</b></h4>
-                                <p>Nota: {note.time}</p>
+    return (
+        <div className="container">
+            <h2 className="titleList"> Notes list {firebase.getCurrentUsername()}</h2>
+            {notes.map((note) =>
+                <div className="card_main_container" key={note.id}>
+                    <div className="card_main">
+                        <div className="wrapper">
+
+                            <div className="content">
+                                <center>
+                                    <h4 className="cardTitle"><b>{note.note}</b></h4>
+                                    <p>Nota: {note.time}</p>
+                                </center>
                             </div>
 
                         </div>

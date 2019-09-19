@@ -4,34 +4,37 @@ import firebase from './firebasekey'
 const AddNote = () => {
     const [note, setNote] = useState('')
     const [time, setTime] = useState('')
+    const userName = firebase.getCurrentUsername()
+    console.log("user name in add note", userName)
 
-    function onSubmit(e){
+    function onSubmit(e) {
         e.preventDefault()
 
-        firebase
-        .firestore()
-        .collection('notes')
-        .add({
-            note,
-            time
-        })
-        .then(()=> {
-            setNote('')
-            setTime('')
-        })
+        firebase.getDB().collection('notes')
+            .add({
+                note,
+                time,
+                userName
+            })
+            .then(() => {
+                setNote('')
+                setTime('')
+            })
     }
 
     return (
         <form onSubmit={onSubmit}>
-            <div>
+            <div className="containerNot">
                 <span className="tit"> Title </span>
-                <input type="text" value={note} onChange={e => setNote(e.currentTarget.value)}/>
+                <input className="text" type="text" value={note} onChange={e => setNote(e.currentTarget.value)} />
             </div>
+            <br />
             <div>
-            <span className="tit"> Note </span>
-                <input type="text" value={time} onChange={e =>setTime(e.currentTarget.value)} />
+                <span className="tit"> Note </span>
+                <input className="text" type="text" value={time} onChange={e => setTime(e.currentTarget.value)} />
             </div>
-            <button>Add a note</button>
+            <br />
+            <button className= "btnAdd" >Add a note</button>
         </form>
 
     )

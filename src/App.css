@@ -3,7 +3,7 @@
 }
 
 body {
-  background: #070D3D
+  background: rgb(57, 60, 80)
 }
 
 .sigIn {
@@ -39,20 +39,69 @@ body {
   font-family: "URW Chancery L",
 }
 
-.tit {
+@import url(https://fonts.googleapis.com/css?family=Acme&display=swap);
+
+ .tit {
   font-size: 145%;
   color: white;
-  font-family: "URW Chancery L",
+  font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+
+ .text {
+  border: 1px solid #DBE1EB;
+  font-size: 18px;
+  font-family: Arial, Verdana;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  background-color: #17141d;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #F0F6F3
+}
+
+.btnAdd{
+  background-color: #17141d;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+  border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+  color: #F0F6F3
+
+}
+
+.btnAdd:hover{
+  transform: translateY(-2px);
+transition: 0.2s ease-out;
+}
+
+
+
+.text:hover {
+  transform: translateY(-2px);
+  transition: 0.2s ease-out;
 }
 
 .cardTitle {
-  color: rgb(7, 7, 7);
+  text-shadow:
+  2px -2px 0 rgb(121, 120, 120); 
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 
 .container .titleList {
   color: #fff;
   text-align: center;
+  text-shadow:
+  2px -2px 0 rgb(121, 120, 120); 
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 
@@ -64,7 +113,7 @@ body {
 
 .card_main .wrapper {
   
-  height: 280px;
+  height: 230px;
   width: 200px;
   border-radius: 10px;
   /*margin-left: -50px; */
@@ -72,6 +121,7 @@ body {
   position: relative;
   left: 0px;
   font-family: "Comic Sans MS"
+  
 }
 
 .card_main_container {
@@ -87,17 +137,30 @@ body {
   text-align: left;
 	display: block;
 	padding: 0 1.7rem;
-	
+	font-family: 'Open Sans', sans-serif;
 }
 
+
+.card_main:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+
 .card_main .wrapper {
-	background-color: #d5d816;
+  
+  color: #fff;
+  background-color: #17141d;
   border-radius: 10px;
   box-shadow: -1rem 0 3rem #000;
 	position: relative;
-	overflow: hidden;
+  overflow: hidden;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
-  font-family: "Comic Sans MS"  
+  font-family: "Comic Sans MS",
+  
 }
 
 /*
