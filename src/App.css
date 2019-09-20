@@ -96,6 +96,21 @@ transition: 0.2s ease-out;
   text-align: center;
 }
 
+.icon{
+  position:absolute;
+    bottom:5px;
+    right:10px;
+    margin-left: 50px;
+    
+}
+
+
+.icon:hover{
+  transform: translateY(-2px);
+transition: 0.2xs ease-out;
+    
+}
+
 .container .titleList {
   color: #fff;
   text-align: center;
@@ -104,7 +119,13 @@ transition: 0.2s ease-out;
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-
+.titleList {
+  color: #fff;
+  text-align: center;
+  text-shadow:
+  2px -2px 0 rgb(121, 120, 120); 
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 * {

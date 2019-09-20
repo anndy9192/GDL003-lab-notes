@@ -42,10 +42,10 @@ class Login extends Component {
                     <span>
                         <center>
 
-                            <h1 className="saludo"> Hola {firebase.auth().currentUser.displayName} </h1>
+                            <h1 className="titleList"> Hola {firebase.auth().currentUser.displayName} </h1>
                             <img className="pictureUser" src={firebase.auth().currentUser.photoURL} alt=""/>
                             <p>
-                                <button onClick={() => firebase.auth().signOut()}>Sign Out</button> </p>
+                                <button className= "btnAdd" onClick={() => firebase.auth().signOut()}>Sign Out</button> </p>
                         </center>
                     </span>
 

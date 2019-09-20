@@ -15,8 +15,8 @@ export default function App() {
         <Layout>
           <Header title="Remember Notes" scroll>
             <Navigation>
-              <Link to="/home">Home</Link>
-              <Link to="/login">Login</Link>
+              <Link to="/home">Notes</Link>
+              <Link to="/login">Login / Sign Out</Link>
             </Navigation>
           </Header>
           <Drawer title="Title">
